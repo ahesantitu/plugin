@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JQ Plugin</title>
+
+    <!-- Fontasome Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assest/lightbox/magnific-popup.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <section class="page">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h1 class="text-uppercase ">jaquary plugin</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 justify-content-center">
+              <div class="page-link text-center">
+                <a href="index.html">home</a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 justify-content-center">
+              <div class="page-link text-center">
+                <a href="page2.html">page 2</a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 justify-content-center">
+              <div class="page-link text-center">
+                <a href="page3.html">page 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="img-gallaery">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 justify-content-center">
+            <h1 class="align-center">Simple Lightbox Demo Page</h1>
+          </div>
+        </div>
+        <div class="row gallerys">
+          <div class="col-lg-3">
+            <a href="images/01.jpg" class="big"><img src="images/01.jpg" alt="" title="Beautiful Image" class="img-fluid" /></a>
+          </div>
+          <div class="col-lg-3">
+            <a href="images/02.jpg"><img src="images/02.jpg" alt="" title="" class="img-fluid" /></a>
+          </div>
+          <div class="col-lg-3">
+            <a href="images/04.jpg"><img src="images/04.jpg" alt="" title="" class="img-fluid" /></a>
+          </div>
+          <div class="col-lg-3">
+            <a href="images/05.jpg"><img src="images/05.jpg" alt="" title="" class="img-fluid"/></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- java Script -->
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="assest/lightbox/jquery.magnific-popup.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $('.gallerys').magnificPopup({
+        type: 'image',
+        delegate: 'a',
+        gallery :{
+          enabled:true
+        }
+      });
+    </script>
+  </body>
+</html>

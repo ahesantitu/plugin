@@ -1,0 +1,88 @@
+.page{
+	background: #1359c3;
+	padding:50px 0;
+	color:#ffff;
+}
+.page-link{
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.page-link a{
+	text-decoration: none;
+}
+.counter{
+	padding: 50px 0;
+	background: #2fc470 !important;
+}
+.countdown{
+	font-size: 30px;
+	color:#ffff;
+}
+.page-scroll{
+	background: #1359c3;
+	padding:50px 0;
+}
+.scroll{
+	min-height: 250px;
+	margin-bottom: 10px;
+	background: #2fc470;
+	
+}
+
+
+
+
+/*page 2*/
+
+.swiper-js{
+	padding: 50px 0;
+	background: #2fc470 !important;
+}
+.swiper-container ,.swiper-containe2{
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+ .swiper-slide {
+ 	width:100%;
+ 	min-height: 350px;
+ 	background-size: cover;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+  	text-align: center;
+    font-size: 18px;
+    background: #fff;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.wow-animation{
+	min-height: 250px;
+	background: gray;
+	color:#fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.wow-box2{
+	background: red;
+
+}
+.wow-box3{
+	background: blue;
+}
+.gallerys a img {
+    height: 250px;
+    -webkit-transition: -webkit-transform .15s ease;
+    -moz-transition: -moz-transform .15s ease;
+    -o-transition: -o-transform .15s ease;
+    -ms-transition: -ms-transform .15s ease;
+    transition: transform .15s ease;
+    position: relative;
+}
+

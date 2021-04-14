@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JQ Plugin</title>
+
+    <!-- Fontasome Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assest/swiper/swiper-bundle.css">
+    <!-- Animation Css -->
+    <link rel="stylesheet" href="assest/wow/animate.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+
+    <!-- main page Content Start -->
+    <section class="page">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h1 class="text-uppercase ">jaquary plugin</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 justify-content-center">
+              <div class="page-link text-center">
+                <a href="index.html">home</a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 justify-content-center">
+              <div class="page-link text-center">
+                <a href="page2.html">page 2</a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 justify-content-center">
+              <div class="page-link text-center">
+                <a href="page3.html">page 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- main page Content Start -->
+
+    <!-- Swipter Js Start -->
+    <section class="swiper-js">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h1>Swiper Js</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+              <!-- Swiper -->
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+          </div>
+
+          <div class="col-lg-4">
+              <!-- Swiper -->
+              <div class="swiper-container2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background: url(images/01.jpg);">Slide 1</div>
+                  <div class="swiper-slide" style="background: url(images/02.jpg">Slide 2</div>
+                  <div class="swiper-slide" style="background: url(images/03.jpg">Slide 3</div>
+                  <div class="swiper-slide" style="background: url(images/04.jpg">Slide 4</div>
+                  <div class="swiper-slide" style="background: url(images/05.jpg">Slide 5</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Swiper Js End -->
+
+    <section class="wow-js">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h1>wow js Plugin</h1>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-lg-4  wow fadeInLeftBig">
+          <div class="wow-animation">
+            <h2>wow example</h2>
+          </div>
+        </div>
+
+        <div class="col-lg-4 wow fadeInDownBig">
+          <div class="wow-animation wow-box2">
+            <h2>wow example</h2>
+          </div>
+        </div>
+
+        <div class="col-lg-4 wow fadeInRightBig">
+          <div class="wow-animation wow-box3">
+            <h2>wow example</h2>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- java Script -->
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="assest/swiper/swiper-bundle.js"></script>
+    <script src="assest/wow/wow.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'flip',
+      grabCursor: true,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var swiper = new Swiper('.swiper-container2', {
+      effect: 'cube',
+      grabCursor: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+  </body>
+</html>
